@@ -1,0 +1,34 @@
+Overview: There are many aspects that make a business successful. At the forefront the product being sold needs to be desirable, but even the most desirable product will not be bought if it is not made accessible to the person it was intended for. A smart business knows its target market, but information describing where that target market lies, in the densest quantity, that also predicts its future change, may not be easily accessible. The ability to pinpoint a target market, and track and predict its change over time can lead to a greater ability to attract clientele. My objective is to create a customizable map in which a business, with varying and unique target markets, can select from a range of variables that match their intended clientele. This dynamic map, of the entire U.S., will display past, present and future (predicted) population demographics, either as precise as the region covering an individual area code (e.g. 92625, Corona Del Mar) or as broad as a U.S. division (New England, East North Central, Pacific, etc.).
+
+
+Motivation: A specific motivation for devising such a map would be to provide a viable solution for socially isolated seniors (age +65). Research shows that 1 in 7 seniors are unable to drive and 41% feel that transportation support in their community is adequate. An inability to easily get around is leading to an increase in their social-isolation. Unfortunately, loneliness and social isolation experienced by seniors are predictors of many adverse health outcomes. Major concern for the lack of transportation options for senior citizens has been expressed by the community and government officials alike. Ride-share companies (e.g. Uber, Lyft) are seeing this problem as as an opportunity to grow their clientele; the U.S. houses over 40 million seniors. In fact, they are training their drivers to cater to seniors with disabilities. My map would help ride-share companies locate and better understand their target market, so as to be prepared for the present and able to plan for the future.
+
+
+Data source: Publicly accessible data (2.3 GB worth) will be acquired from the United States Census Bureau’s American Community Survey (ACS), which has been collected since 2005. The ACS covers all 50 states and is sent to a representative sample of the U.S. population (about 3.5 million addresses) each year. Each participant is legally obligated to answer all questions, as accurately as possible. No household receives the same survey more than once every five years. The ACS provides data concerning seniors such as: State Code, Area Code, Person Number, Number of people per household, Age, Sex, Marital status, Self-care difficulty, Hearing difficulty, Vision difficulty, Independent living difficulty, Ambulatory difficulty, Cognitive difficulty, Grandparents living with grandchildren, Medicare, and more.
+
+
+Exploratory Data Analysis: The proposed project is ambitious, but viable as the data is easily accessible (via API or csv) and there are many variables to help understand the senior demographic (listed above). As an example of available data, in plot 1 and 2, I use a small subset of the total ACS publicly available data concerning only California residents acquired from 2014:
+ ### from link below go to: 2014 ACS 1-year PUMS, California Population Records ###
+ 
+Plot 1 Pie chart displaying data from ACS 2014 of percentage of California seniors (>= 65) with vs. without disability.
+Plot 2 Stacked bar graph showing breakdown of total number of seniors with and without a particular disability in CA from the 2014 ACS data.
+
+
+Overall, analysis would constitute determining the type of senior (>= 65) I am observing (disabled, sex, SES, etc.) and where in the U.S. they have resided, currently reside and will reside in the future. Some example questions useful for ride-share companies to have answers to would be:
+1. Of seniors, which age groups (65-70, 70-75 etc.) have the highest amount of disability (t-test)?
+2. Does SES and/or sex correlate with disability (linear/multiple regression)?
+3. What type of disability (hearing, vision, ambulatory etc.) is most common in each region (t-test)? (what skills do ride-share drivers need to have to best serve their senior?)
+4. Where does the densest concentration of seniors with the highest SES reside (t-test)? (those of higher SES may be more willing to pay for ride-share programs).
+5. Can we predict what the demographics (disability, sex, SES, etc.) of seniors in particular regions will be based on prior ACS data collected since 2005 (multiple regression).
+6. Can we determine which variables (sex, SES) have had an effect on disability over time, from 2005-2014 (ANOVA)? Does this vary across region?
+
+
+How much data did you analyze: 354
+
+
+API is also available. key: http://api.census.gov/data/2015/pdb/tract?get=County_name,State_name,Tot_Population_CEN_2010&for=tract:*&in=state:06+county:*&key=ee05c62321438e62b3c95b2263944a2aa13d64e7
+
+
+Link to data source: http://www.census.gov/programs-surveys/acs/data/pums.html
+Youtube: https://www.youtube.com/embed/BpTkoQ4Qi-4
+
