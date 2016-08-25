@@ -1,7 +1,7 @@
 # MyPyProjects
 Python notebook projects
 
-DataIncubtor_project Description:
+DataIncubator_project Description:
 
 1. Using publicly available census data I will create a pie chart that displays the percentage of California seniors (+=65) in this sample that have a disability.
 
